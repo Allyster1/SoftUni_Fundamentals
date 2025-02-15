@@ -175,7 +175,7 @@
 #         last_printed = new_string
 #
 ##################################################
-# 12. Christmas Spirit
+#12. Christmas Spirit
 #
 # quantity = int(input())
 # remaining_days = int(input())
