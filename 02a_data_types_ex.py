@@ -5,10 +5,9 @@
 # num3 = int(input())
 # num4 = int(input())
 #
-# sum = int(num1 + num2)
-# division = int(sum / num3)
-# multiplication = int(division * num4)
-# print(multiplication)
+# result = (num1 + num2) // num3 * num4
+#
+# print(result)
 #
 ##################################################
 # 02. Chars to String
