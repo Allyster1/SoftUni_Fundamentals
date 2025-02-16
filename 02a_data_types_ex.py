@@ -51,13 +51,12 @@
 # first_char = int(input())
 # last_char = int(input())
 #
-# ascii_char = ""
-#
-#
 # for i in range(first_char, last_char + 1):
-#     ascii_char += chr(i) + " "
+#     if i == last_char:
+#         print(chr(i))
+#     else:
+#         print(chr(i), end=" ")
 #
-# print(ascii_char)
 #
 ##################################################
 # 06. Triples of Latin Letters
@@ -85,3 +84,6 @@
 #         water_tank += liters
 #
 # print(water_tank)
+#
+##################################################
+#
