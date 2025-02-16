@@ -86,4 +86,73 @@
 # print(water_tank)
 #
 ##################################################
+# 08. Party Profit
 #
+# group_size = int(input())
+# days = int(input())
+# coins = 0
+#
+# for current_day in range(1, days + 1):
+#     if current_day % 10 == 0:
+#         group_size -= 2
+#     if current_day % 15 == 0:
+#         group_size += 5
+#     if current_day % 3 == 0:
+#         coins -= 3 * group_size
+#     if current_day % 5 == 0:
+#         coins += 20 * group_size
+#         if current_day % 3 == 0:
+#             coins -= 2 * group_size
+#
+#     coins += 50
+#     coins -= 2 * group_size
+#
+# coins_per_person = coins // group_size
+#
+# print(f"{group_size} companions received {coins_per_person} coins each.")
+#
+##################################################
+# 09. Snowballs
+#
+# snowballs = int(input())
+# max_weight = 0
+# max_time = 0
+# max_value = 0
+# max_quality = 0
+#
+# for _ in range(snowballs):
+#     current_weight = int(input())
+#     current_time = int(input())
+#     current_quality = int(input())
+#
+#     current_value = int((current_weight / current_time) ** current_quality)
+#
+#     if current_value > max_value:
+#         max_weight = current_weight
+#         max_time = current_time
+#         max_value = current_value
+#         max_quality = current_quality
+#
+# print(f"{max_weight} : {max_time} = {max_value} ({max_quality})")
+#
+#
+##################################################
+# 10. Gladiator Expenses
+#
+# lost_fights = int(input())
+# helmet_price = float(input())
+# sword_price = float(input())
+# shield_price = float(input())
+# armor_price = float(input())
+#
+# total_helmet_broken = lost_fights // 2
+# total_sword_broken = lost_fights // 3
+# total_shield_broken = lost_fights // 6
+# total_armor_broken = total_sword_broken // 4
+#
+# expenses = total_helmet_broken * helmet_price \
+#            + total_sword_broken * sword_price \
+#            + total_shield_broken * shield_price \
+#            + total_armor_broken * armor_price
+#
+# print(f"Gladiator expenses: {expenses:.2f} aureus")
