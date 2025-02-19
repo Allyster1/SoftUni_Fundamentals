@@ -44,3 +44,54 @@
 # print(f"Sum of negatives: {sum(negative_list)}")
 #
 ##################################################
+# 04. Search
+#
+# n = int(input())
+# word = input()
+#
+# str_list = []
+#
+# for _ in range(n):
+#     current_str = input()
+#     str_list.append(current_str)
+#
+# print(str_list)
+#
+# for i in range(len(str_list) -1, -1, -1):
+#     el = str_list[i]
+#     if word not in el:
+#         str_list.remove(el)
+# print(str_list)
+#
+##################################################
+# 05. Numbers Filter
+#
+# n = int(input())
+#
+# numbers_list = []
+# filtered_numbers_list = []
+#
+# for _ in range(n):
+#     current_num = int(input())
+#     numbers_list.append(current_num)
+#
+# command = input()
+#
+# if command == "even":
+#     for num in numbers_list:
+#         if num % 2 == 0:
+#             filtered_numbers_list.append(num)
+# elif command == "odd":
+#     for num in numbers_list:
+#         if num % 2 != 0:
+#             filtered_numbers_list.append(num)
+# elif command == "negative":
+#     for num in numbers_list:
+#         if num < 0:
+#             filtered_numbers_list.append(num)
+# elif command == "positive":
+#     for num in numbers_list:
+#         if num >= 0:
+#             filtered_numbers_list.append(num)
+#
+# print(filtered_numbers_list)
