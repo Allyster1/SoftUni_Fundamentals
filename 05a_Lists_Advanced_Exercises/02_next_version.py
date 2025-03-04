@@ -8,8 +8,6 @@ def update_version(text: str) -> str:
         if n2 > 9:
             n2 = 0
             n1 += 1
-            if n1 > 9:
-                n1 = 0
 
     return f"{n1}.{n2}.{n3}"
 
