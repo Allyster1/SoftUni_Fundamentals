@@ -1,11 +1,22 @@
+def positive_numbers(list_of_numbers: list) -> str:
+    return ", ".join([num for num in list_of_numbers if int(num) >= 0])
+
+
+def negative_numbers(list_of_numbers: list) -> str:
+    return ", ".join([num for num in list_of_numbers if int(num) < 0])
+
+
+def even_numbers(list_of_numbers: list) -> str:
+    return ", ".join([num for num in list_of_numbers if int(num) % 2 == 0])
+
+
+def odd_numbers(list_of_numbers: list) -> str:
+    return ", ".join([num for num in list_of_numbers if int(num) % 2 != 0])
+
+
 numbers = input().split(", ")
 
-positive_numbers = [num for num in numbers if int(num) >= 0]
-negative_numbers = [num for num in numbers if int(num) < 0]
-even_numbers = [num for num in numbers if int(num) % 2 == 0]
-odd_numbers = [num for num in numbers if int(num) % 2 != 0]
-
-print(f"Positive: {', '.join(positive_numbers)}")
-print(f"Negative: {', '.join(negative_numbers)}")
-print(f"Even: {', '.join(even_numbers)}")
-print(f"Odd: {', '.join(odd_numbers)}")
+print(f"Positive: {positive_numbers(numbers)}")
+print(f"Negative: {negative_numbers(numbers)}")
+print(f"Even: {even_numbers(numbers)}")
+print(f"Odd: {odd_numbers(numbers)}")

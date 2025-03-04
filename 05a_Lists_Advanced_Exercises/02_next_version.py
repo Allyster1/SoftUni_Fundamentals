@@ -1,15 +1,15 @@
 def update_version(text: str) -> str:
-    n1, n2, n3 = map(int, text.split("."))
+    third, second, first = map(int, text.split("."))
 
-    n3 += 1
-    if n3 > 9:
-        n3 = 0
-        n2 += 1
-        if n2 > 9:
-            n2 = 0
-            n1 += 1
+    first += 1
+    if first > 9:
+        first = 0
+        second += 1
+        if second > 9:
+            second = 0
+            third += 1
 
-    return f"{n1}.{n2}.{n3}"
+    return f"{third}.{second}.{first}"
 
 
 version = input()
