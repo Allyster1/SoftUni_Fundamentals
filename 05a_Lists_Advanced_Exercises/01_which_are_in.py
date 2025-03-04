@@ -1,9 +1,9 @@
-def find_substring(first: list, second: list) -> list:
-    substr_sequence = []
+def find_substring(first: list, second: str) -> list:
+    sequence = []
 
     for substring in first:
-        if substring in second and substring not in substr_sequence:
-            substr_sequence.append(substring)
+        if substring in second and substring not in sequence:
+            sequence.append(substring)
 
     return substr_sequence
 
