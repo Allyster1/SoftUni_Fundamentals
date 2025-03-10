@@ -18,12 +18,12 @@ class Movie:
             Movie.__watched_movies += 1
 
     def __repr__(self):
-        return f"Movie name: {self.name}; Movie director: {self.director}. Total watched movies: {Movie.__watched_movies}"
+        return f"Movie name: {self.name}; Movie director: {self.director}. \nTotal watched movies: {Movie.__watched_movies}"
 
 
-first_movie = Movie("Inception", "Christopher Nolan")
-second_movie = Movie("The Matrix", "The Wachowskis")
-third_movie = Movie("The Predator", "Shane Black")
+first_movie = Movie("Inception","Christopher Nolan")
+second_movie = Movie("The Matrix","The Wachowskis")
+third_movie = Movie("The Predator","Shane Black")
 first_movie.change_director("Me")
 third_movie.change_name("My Movie")
 first_movie.watch()
