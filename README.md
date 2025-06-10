@@ -16,3 +16,7 @@ Additional technologies needed by every software developer are studied, such as 
 - Analysis of complex problems and reduction to computer-executable steps
 - Basic HTML and CSS skills
 - Working with linear data structures
+
+## 📜 Certificate
+
+![Programming Fundamentals with Python](https://github.com/user-attachments/assets/98c3aa24-e597-4b6e-8353-1584d3cca1fd)
